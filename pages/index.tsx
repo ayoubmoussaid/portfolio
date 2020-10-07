@@ -9,11 +9,11 @@ import myList from '../data/sidebardata';
 export default function Home() {
   
   return (
-    <div className="w-screen h-screen flex flex-row" >
-        <div className="h-screen md:w-1/3 w-0">
+    <div className="w-screen h-screen flex flex-row font-cabin tracking-wide" >
+        <div className="h-screen md:w-1/3 w-0 z-0">
           <SideBar />
         </div>
-        <div className="h-screen md:w-2/3 w-full">
+        <div className="h-screen md:w-2/3 w-full z-0 overflow-x-hidden">
           <Main />
         </div>
     </div>

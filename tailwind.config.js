@@ -14,7 +14,12 @@ module.exports = {
           '0%, 100%': { opacity: 1 },
           '50%': { opacity: 0.1 },
           }
-        }
+        },
+        fontFamily: {
+          'josefin-sans' : ['Josefin Sans','sans'],
+          'cabin': ['Cabin', 'sans'],
+          'Dr-Sugiyama': ['Dr Sugiyama']
+        },
     },
   },
   variants: {},

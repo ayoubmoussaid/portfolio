@@ -16,7 +16,8 @@ const Skills: FC<Element> = () => {
                 </div >
                 <div className="flex flex-wrap pt-8">
                     <div className="w-full text-gray-700">
-                        As a reluctant graphic designer, I fled from a traditional path and explored my creativity, trough trying my hands on various techniques and software. Software is more than just a tool, and I try to dig deep into it. Today, I knack for critical thinking, empathy and creativity to create viable and impactful solutions using these technologies.
+                    Being the curious person I am, I always wondered how programs worked, which led me to discover programming through its best ways (as I see it): <b>C Language</b>.
+                That was the beginning of my journey through various software, languages and frameworks.
                     </div>
                     <div className="flex flex-wrap pt-8 w-full items-center justify-between">
                     {

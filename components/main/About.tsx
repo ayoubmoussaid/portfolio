@@ -9,14 +9,14 @@ const About: FC<Element> = () => {
     const stringSplitter = string => {
         const splitter = new GraphemeSplitter();
         return splitter.splitGraphemes(string);
-      };
+    };
 
     return (
         <div id="about-sec" className="w-full h-full flex flex-col">
-            <div className="py-8 h-16 w-full "/>
+            <div className="py-8 sm:h-16 h-12 w-full "/>
             <div className="sm:px-20 px-4 pt-24 h-full w-full bg-gray-100 text-gray-900 sm:rounded-tl-md flex flex-col">
                 <img src="/assets/profile.jpeg" className="w-32 h-32 rounded-full"/>
-                <div className="text-3xl text-gray-900 font-semibold pt-16">
+                <div className="sm:text-3xl text-2xl text-gray-900 font-semibold pt-16">
                     <Typewriter
                         options={{
                             autoStart: true,
@@ -40,7 +40,12 @@ const About: FC<Element> = () => {
                 ABOUT
             </div>
             <div className="sm:px-20 px-4 pt-10 bg-gray-100 text-gray-700">
-                Award winning interdisciplinary Designer & Photographer. Currently pursuing a perfect blend of style and function for a wide range of interactive graphic design. For the past 6 years I've helped global companies, organizations and start-ups reach business goals with user focused, interactive design. I enjoy bringing clarity to complex problems with a people first approach.
+                Currently software engineer student at Faculty of Science and Technologies-Settat, also studying at 1337 Coding School(42 Network). I am more passionate by mobile developement but I do Web and APIs as well.<br/>
+                I also love graphics Cards (I don't have any nonetheless).
+            </div>
+            <div className="sm:px-20 px-4 pt-5 bg-gray-100 w-full font-Dr-Sugiyama text-4xl text-gray-900">
+                Moussaid Ayoub
+                 {/* <img src="/assets/Moussaid Ayoub.png" className="h-16 w-48"/> */}
             </div>
             <div className="sm:px-20 px-4 pt-10 pb-20 bg-gray-100 text-gray-700">
                 Find me on <a className="hover:underline" href="https://www.linkedin.com/in/ayoub-moussaid/"><b>LinkedIn</b></a> & <a className="hover:underline" href="https://twitter.com/ayoubmoussaid6"><b>Twitter</b></a>.
