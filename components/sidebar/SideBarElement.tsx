@@ -6,7 +6,7 @@ import { Elementt } from '../../interfaces';
 
 const SideBarElement: FC<Elementt> = ({checkClicked, data}) => {
     let [_hover, setHovered] = useState(false);
-
+ 
     function verify(){
         checkClicked(data.id);
         document.getElementById(data.title.toLowerCase()+'-sec').scrollIntoView({behavior:"smooth"});
