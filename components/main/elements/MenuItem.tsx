@@ -13,12 +13,12 @@ const MenuItem: FC<Elementt> = ({checkClicked, data}) => {
     }
 
     return ( 
-        <div className="mx-4 my-2 flex border-t border-gray-500">
+        <div className="mx-4 my-2 flex border-t border-gray-500 items-center justify-center">
             <motion.div
                 onTap={()=>verify()}
                 onHoverStart={()=>setHovered(true)}
                 onHoverEnd={()=>setHovered(false)}
-                className="w-2 h-2 cursor-pointer m-3"
+                className="w-full h-4 cursor-pointer m-3"
             >
                 <motion.div 
                     animate={{
@@ -28,9 +28,9 @@ const MenuItem: FC<Elementt> = ({checkClicked, data}) => {
                     transition={{ 
                         ease: "easeInOut", duration: 0.3,
                     }}
-                    className="text-sm font-semibold text-gray-100"
+                    className="text-sm font-semibold text-gray-100 w-full"
                 >
-                    -{data.title}
+                    {data.title}
                 </motion.div>
             </motion.div>
         </div>
