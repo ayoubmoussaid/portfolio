@@ -1,9 +1,8 @@
 import React, { FC, useContext, useEffect } from "react"
 import { useInView } from "react-intersection-observer";
-import { Element } from '../../interfaces/index'
 import GlobalState from "../GlobalState";
 
-const Contact: FC<Element> = () => {
+const Contact: FC = () => {
     // const [elements, setElements] = useContext(GlobalState);
     const { ref, inView, entry } = useInView({threshold: 0,});
     

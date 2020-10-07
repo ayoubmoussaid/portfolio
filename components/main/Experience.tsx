@@ -1,10 +1,9 @@
 import React, { FC } from "react"
 import ExperienceElement from "./elements/ExperienceElement"
-import { Element } from '../../interfaces/index'
 import experience from "../../data/experience"
 
 
-const Experience: FC<Element> = () => {
+const Experience: FC = () => {
     return (
         <div id="experience-sec">
             <hr/>

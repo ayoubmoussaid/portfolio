@@ -1,12 +1,11 @@
 import React, { FC } from "react"
 import SkillElement from "./elements/SkillElement"
-import { Element } from '../../interfaces/index'
 import mySkills from "../../data/skills"
 
 
 
 
-const Skills: FC<Element> = () => {
+const Skills: FC = () => {
     return (
         <div id="skills-sec">
             <hr/>

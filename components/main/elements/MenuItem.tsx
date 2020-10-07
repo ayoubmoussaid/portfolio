@@ -1,9 +1,10 @@
 import React, { FC, useState } from 'react'
 import {motion} from 'framer-motion'
-import { Element } from '../../interfaces/index'
+import { Elementt } from '../../../interfaces';
 
 
-const MenuItem: FC<Element> = ({checkClicked, data}) => {
+
+const MenuItem: FC<Elementt> = ({checkClicked, data}) => {
     let [_hover, setHovered] = useState(false);
 
     function verify(){

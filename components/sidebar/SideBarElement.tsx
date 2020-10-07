@@ -1,9 +1,10 @@
 import React, { FC, useState } from 'react'
 import {motion} from 'framer-motion'
-import { Element } from '../../interfaces/index'
+import { Elementt } from '../../interfaces';
 
 
-const SideBarElement: FC<Element> = ({checkClicked, data}) => {
+
+const SideBarElement: FC<Elementt> = ({checkClicked, data}) => {
     let [_hover, setHovered] = useState(false);
 
     function verify(){

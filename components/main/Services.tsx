@@ -1,12 +1,13 @@
 
 import React, { FC, useState } from 'react'
+import whatido from '../../data/service'
 import ServiceElement from './elements/ServiceElement'
-import { Element } from '../../interfaces/index'
-import whatido from '../../data/service.tsx'
 
 
 
-const Services: FC<Element> = () => {
+
+
+const Services: FC = () => {
     return (
         <div id="services-sec">
             <hr/>

@@ -6,7 +6,7 @@ export interface BarElement {
     clicked: boolean
 }
 
-export interface Element {
+export interface Elementt {
     checkClicked: CallableFunction,
     data: {
         id: number,

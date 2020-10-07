@@ -1,12 +1,11 @@
 import React, { FC } from "react"
 import EducationElement from "./elements/EducationElement";
-import { Element } from '../../interfaces/index'
 import education from "../../data/education";
 
 
 
 
-const Education: FC<Element> = () => {
+const Education: FC = () => {
     return (
         <div id="education-sec">
             <hr/>

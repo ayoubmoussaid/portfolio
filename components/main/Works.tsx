@@ -1,10 +1,9 @@
 import React, { FC } from "react"
 import WorkElement from "./elements/WorkElement"
-import { Element } from '../../interfaces/index'
 import work from "../../data/work"
 
 
-const Works: FC<Element> = () => {
+const Works: FC = () => {
     return (
         <div id="work-sec">
             <hr/>

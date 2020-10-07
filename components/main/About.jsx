@@ -1,11 +1,10 @@
 import { motion } from 'framer-motion'
 import React, { FC, useState } from 'react'
-import Typewriter from 'typewriter-effect';
 import GraphemeSplitter from "grapheme-splitter";
-import { Element } from '../../interfaces/index'
-import { useInView } from 'react-intersection-observer';
 
-const About: FC<Element> = () => {
+import Typewriter  from 'typewriter-effect';
+
+function About() {
     const stringSplitter = string => {
         const splitter = new GraphemeSplitter();
         return splitter.splitGraphemes(string);
@@ -55,4 +54,4 @@ const About: FC<Element> = () => {
 }
 
 
-export default About as any
+export default About
