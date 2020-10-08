@@ -16,6 +16,7 @@
     "react-dom": "16.13.1",
     "react-intersection-observer": "^8.29.0",
     "react-router-dom": "^5.2.0",
+    "react-typewriting-effect": "^1.0.4",
     "social-media-icons-react": "^1.1.2",
     "typewriter-effect": "^2.13.1"
   },

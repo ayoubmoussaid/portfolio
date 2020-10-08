@@ -27,4 +27,4 @@ const Main: FC = ({}) => {
     )
 }
 
-export default Main
+export default React.memo(Main)

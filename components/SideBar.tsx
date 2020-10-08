@@ -5,7 +5,7 @@ import GlobalState from './GlobalState';
 
 
 const SideBar: FC = () => {
-    const [elements, setElements] = useState(myList);
+    const [elements, setElements] = useContext(GlobalState);
     
     function checkClicked(id){
         setElements(elements.map(elt => {

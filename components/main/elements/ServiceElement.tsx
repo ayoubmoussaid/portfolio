@@ -8,7 +8,7 @@ const ServiceElement: FC<Service> = ({data}) => {
 
     return (
         <motion.div 
-            className="w-40 my-6 mx-3 py-8 px-3 flex flex-col items-center justify-center" 
+            className="w-40 my-6 mx-2 py-6 px-3 flex flex-col items-center justify-center" 
             onHoverStart={() => setHover(true)}
             onHoverEnd={()=>setHover(false)}>
 

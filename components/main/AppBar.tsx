@@ -1,7 +1,8 @@
 import { motion } from 'framer-motion'
-import React, { FC, useState } from 'react'
+import React, { FC, useContext, useState } from 'react'
 import { useInView } from 'react-intersection-observer';
 import myList from '../../data/sidebardata';
+import GlobalState from '../GlobalState';
 import CustomButton from './elements/CustomButton';
 import MenuItem from './elements/MenuItem';
 import Burger from './elements/ToggleMenu';
@@ -11,7 +12,7 @@ const AppBar: FC = () => {
     const [state, setState] = useState(false)
     const [color, setColor] = useState("#1a202c")
 
-    const [elements, setElements] = useState(myList);
+    const [elements, setElements] = useContext(GlobalState);
     
     function checkClicked(id){
         setState(false)

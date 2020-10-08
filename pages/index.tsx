@@ -7,15 +7,18 @@ import myList from '../data/sidebardata';
 
 
 export default function Home() {
-  
+  const [elements, useElements] = useState(myList)
   return (
-    <div className="w-screen h-screen flex flex-row font-cabin tracking-wide" >
+    <GlobalState.Provider value={[elements, useElements]}>
+      <div className="w-screen h-screen flex flex-row font-cabin tracking-wide" >
         <div className="h-screen md:w-1/3 w-0 z-0">
           <SideBar />
         </div>
         <div className="h-screen md:w-2/3 w-full z-0 overflow-x-hidden">
           <Main />
         </div>
-    </div>
+      </div>
+    </GlobalState.Provider>
+    
   )
 }
