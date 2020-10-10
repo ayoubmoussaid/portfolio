@@ -3,7 +3,7 @@ module.exports = {
     removeDeprecatedGapUtilities: true,
     purgeLayersByDefault: true,
   },
-  purge: [],
+  purge: ["./components/**/*.tsx", "./pages/**/*.tsx"],
   theme: {
     extend: {
       animation: {
@@ -18,7 +18,6 @@ module.exports = {
         fontFamily: {
           'josefin-sans' : ['Josefin Sans','sans'],
           'cabin': ['Cabin', 'sans'],
-          'Dr-Sugiyama': ['Dr Sugiyama']
         },
     },
   },

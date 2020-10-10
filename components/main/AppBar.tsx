@@ -11,7 +11,7 @@ const AppBar: FC = () => {
     const { ref, inView, entry } = useInView({threshold: 0,});
     const [state, setState] = useState(false);
     const [color, setColor] = useState("#1a202c");
-    const link = "/assets/Moussaid-Ayoub.pdf";
+    const link = "/Moussaid-Ayoub.pdf";
 
     const [elements, setElements] = useContext(GlobalState);
     

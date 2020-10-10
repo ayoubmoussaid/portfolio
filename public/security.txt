@@ -1,0 +1,3 @@
+Contact: mailto:ayoubmoussaid71@gmail.com
+Preferred-Languages: en, fr, ar
+Canonical: https://ayoubmoussaid.me/security.txt

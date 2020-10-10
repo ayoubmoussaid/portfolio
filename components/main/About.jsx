@@ -47,9 +47,8 @@ function About() {
                     Currently software engineer student at Faculty of Science and Technologies-Settat, also studying at 1337 Coding School(42 Network). I am more passionate by mobile development, but I do Web and APIs as well.<br/>
                     I also love graphics Cards (I don't have any nonetheless).
                 </div>
-                <div className="sm:px-20 px-4 pt-5 bg-gray-100 w-full font-Dr-Sugiyama text-4xl text-gray-900">
-                    Moussaid Ayoub
-                    {/* <img src="/assets/Moussaid Ayoub.png" className="h-16 w-48"/> */}
+                <div className="sm:px-20 px-4 pt-5 bg-gray-100 w-full text-4xl text-gray-900">
+                     <img src="/assets/Moussaid Ayoub.png" className="h-16 w-48"/>
                 </div>
                 <div className="sm:px-20 px-4 pt-10 pb-20 bg-gray-100 text-gray-700">
                     Find me on <a className="hover:underline" href="https://www.linkedin.com/in/ayoub-moussaid/"><b>LinkedIn</b></a> & <a className="hover:underline" href="https://twitter.com/ayoubmoussaid6"><b>Twitter</b></a>.
