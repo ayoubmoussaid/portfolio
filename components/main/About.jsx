@@ -13,9 +13,6 @@ function About() {
         const splitter = new GraphemeSplitter();
         return splitter.splitGraphemes(string);
     };
-    
-
-    console.log('hi there')
     return (
         <InView as="div" threshold={0.5} onChange={(inView, entry) => doIt(inView, 0, elements, setElements)}>
             <motion.div initial={{x:-10}} animate={{x:0}} id="about-sec" className="w-full h-full flex flex-col">

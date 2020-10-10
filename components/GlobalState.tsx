@@ -10,7 +10,6 @@ export default GlobalState;
 export function doIt(inView: boolean, id: number, elements, setElements){
 
     if(inView){
-        console.log(inView)
         setElements(elements.map(elt => {
             if (elt.id === id){
                 return {
