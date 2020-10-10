@@ -31,7 +31,7 @@ const CustomButton: FC<props> = ({inView, onClicked, widget, colorChange, link})
                 initial={{width: '0%'}}
                 className={"h-full w-full absolute top-0 left-0 "  + (inView ? 'bg-gray-100' : 'bg-pink-600') }
                 animate={{width: _hover ? "100%" : "0%"}} 
-                transition={{duration: 0.5}}>
+                transition={{duration: 0.5, ease:"easeInOut"}}>
             </motion.div>
             <motion.a
                 target="_blank" rel="noopener noreferrer"

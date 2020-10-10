@@ -40,7 +40,7 @@ const AppBar: FC = () => {
                     animate={{backgroundColor: (!inView || state) ? "rgba(26, 33, 45, 1)": "rgba(26, 33, 45, 0)"}} transition={{duration: 0.5}}
                     className={"w-full sm:h-16 h-12 flex justify-between items-center md:pl-20 md:pr-12 px-4 md:w-2/3 fixed top-0 right-auto z-10"}
                 >
-                    <motion.div initial={{x : -10}} animate={{x : 0}} className="md:text-xl font-bold text-white font-josefin-sans">MOUSSAID AYOUB</motion.div>
+                    <motion.div initial={{x : -10}} animate={{x : 0}} transition={{ease:"easeInOut"}} className="md:text-xl font-bold text-white font-josefin-sans">MOUSSAID AYOUB</motion.div>
                     <div className="md:block hidden">
                         <CustomButton
                             link={link}
