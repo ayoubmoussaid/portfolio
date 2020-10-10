@@ -33,6 +33,10 @@ const AppBar: FC = () => {
         )
     }
 
+    function jumptoLink(){
+        var win = window.open(link, '_blank');
+        win.focus();
+    }
 
     return (
             <div className="w-full h-auto relative">
@@ -43,26 +47,23 @@ const AppBar: FC = () => {
                     <motion.div initial={{x : -10}} animate={{x : 0}} transition={{ease:"easeInOut"}} className="md:text-xl font-bold text-white font-josefin-sans">MOUSSAID AYOUB</motion.div>
                     <div className="md:block hidden">
                         <CustomButton
-                            link={link}
                             inView={inView}
                             colorChange={null}
-                            onClicked={()=>{}} 
+                            onClicked={()=>{jumptoLink()}} 
                             widget={<div>DOWNLOAD RESUME</div>}
                         />
                     </div>
                     <div className="md:hidden flex">
                         <div className="mr-2">
                             <CustomButton
-                            link={link}
                             colorChange={null}
                             inView={inView} 
-                            onClicked={()=>{}} 
+                            onClicked={()=>{jumptoLink()}} 
                             widget={<svg className="fill-current h-6 w-6" viewBox="0 0 512 512"  xmlns="http://www.w3.org/2000/svg"><g id="Solid"><path d="m239.029 384.97a24 24 0 0 0 33.942 0l90.509-90.509a24 24 0 0 0 0-33.941 24 24 0 0 0 -33.941 0l-49.539 49.539v-262.059a24 24 0 0 0 -48 0v262.059l-49.539-49.539a24 24 0 0 0 -33.941 0 24 24 0 0 0 0 33.941z"/><path d="m464 232a24 24 0 0 0 -24 24v184h-368v-184a24 24 0 0 0 -48 0v192a40 40 0 0 0 40 40h384a40 40 0 0 0 40-40v-192a24 24 0 0 0 -24-24z"/></g></svg>}
                             />
                         </div>
                         <div className="ml-2">
                             <CustomButton
-                            link=""
                             inView={inView}
                             colorChange={setColor}
                             onClicked={()=> setState(prev => !prev)} 

@@ -4,14 +4,13 @@ import { motion } from 'framer-motion'
 import React, { FC, useState } from 'react'
 
 interface props {
-    link: string
     inView: boolean;
     widget: JSX.Element;
     onClicked: CallableFunction;
     colorChange: CallableFunction;
 }
 
-const CustomButton: FC<props> = ({inView, onClicked, widget, colorChange, link}) => {
+const CustomButton: FC<props> = ({inView, onClicked, widget, colorChange}) => {
     const [_hover, setHover] = useState(false);
     const [color1, color2] = inView ? ["#1a202c", "#f7fafc"] :  ["#f7fafc" , "#1a202c"];
 
@@ -33,15 +32,13 @@ const CustomButton: FC<props> = ({inView, onClicked, widget, colorChange, link})
                 animate={{width: _hover ? "100%" : "0%"}} 
                 transition={{duration: 0.5, ease:"easeInOut"}}>
             </motion.div>
-            <motion.a
-                target="_blank" rel="noopener noreferrer"
-                href={link}
+            <motion.div
                 initial={{width:"100%", color: color2}}
                 animate={{color: _hover ? color1 : color2, }} 
                 transition={{duration: 0.5}}
                 className="absolute top-0 left-0 flex items-center justify-items-center justify-center w-full h-full">
                     {widget}
-            </motion.a>
+            </motion.div>
         </motion.button> 
     )
 }
