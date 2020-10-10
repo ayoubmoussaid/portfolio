@@ -8,6 +8,7 @@ import Education from "./main/Education"
 import Experience from './main/Experience'
 import Contact from './main/Contact'
 import Footer from './main/Footer'
+import { motion } from 'framer-motion'
 
 
 const Main: FC = ({}) => {

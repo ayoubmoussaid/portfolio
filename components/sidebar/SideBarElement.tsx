@@ -20,7 +20,8 @@ const SideBarElement: FC<Elementt> = ({checkClicked, data}) => {
                 onHoverEnd={()=>setHovered(false)}
                 className="bg-gray-200 w-2 h-2 cursor-pointer rounded-full m-3"
             />
-            <motion.div 
+            <motion.div
+                initial={{x : data.clicked ? 0 : 60, opacity : data.clicked ? 1 : 0}}
                 animate={{
                     x: data.clicked ? 0 :(_hover ? 0 : 60),
                     opacity: data.clicked ? 1 :(_hover ? 1 : 0),

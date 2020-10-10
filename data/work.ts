@@ -9,7 +9,7 @@ const work = [
     {
         id:2,
         title:'TelmidTice',
-        text: 'The project where I created a video streaming cross platform mobile app for students from all levels who left school due to Covid-19, where they can watch or download educational videos made by their teachers in Morocco.',
+        text: 'The project where I created a video streaming cross platform mobile app for students of all levels who left school due to Covid-19, where they can watch or download educational videos made by their teachers in Morocco.',
         language: ['Flutter', 'SQLite']
     },
     {
@@ -27,7 +27,7 @@ const work = [
     {
         id:5,
         title:'Ft-printf',
-        text: 'A project where i created most of the the C language famous \"printf\".',
+        text: 'A project where i created most of the C language famous \"printf\".',
         language: ['C']
     }
 ]

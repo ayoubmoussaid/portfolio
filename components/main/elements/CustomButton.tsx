@@ -4,13 +4,14 @@ import { motion } from 'framer-motion'
 import React, { FC, useState } from 'react'
 
 interface props {
+    link: string
     inView: boolean;
     widget: JSX.Element;
     onClicked: CallableFunction;
     colorChange: CallableFunction;
 }
 
-const CustomButton: FC<props> = ({inView, onClicked, widget, colorChange}) => {
+const CustomButton: FC<props> = ({inView, onClicked, widget, colorChange, link}) => {
     const [_hover, setHover] = useState(false);
     const [color1, color2] = inView ? ["#1a202c", "#f7fafc"] :  ["#f7fafc" , "#1a202c"];
 
@@ -18,8 +19,8 @@ const CustomButton: FC<props> = ({inView, onClicked, widget, colorChange}) => {
         colorChange && colorChange(color2);
     return (
         <motion.button
-            initial={{backgroundColor: '#1a202c'}}
-            animate={{backgroundColor: inView ? '#1a202c' : '#f7fafc'}}
+            initial={{backgroundColor: '#1a202c', x:-10}}
+            animate={{backgroundColor: inView ? '#1a202c' : '#f7fafc', x: 0}}
             transition={{duration: 0.5}}
             onTap={()=> onClicked()}
             onHoverStart={()=>{setHover(true); colorChange && colorChange(color1)}}
@@ -32,13 +33,15 @@ const CustomButton: FC<props> = ({inView, onClicked, widget, colorChange}) => {
                 animate={{width: _hover ? "100%" : "0%"}} 
                 transition={{duration: 0.5}}>
             </motion.div>
-            <motion.div
+            <motion.a
+                target="_blank" rel="noopener noreferrer"
+                href={link}
                 initial={{width:"100%", color: color2}}
                 animate={{color: _hover ? color1 : color2, }} 
                 transition={{duration: 0.5}}
                 className="absolute top-0 left-0 flex items-center justify-items-center justify-center w-full h-full">
                     {widget}
-            </motion.div>
+            </motion.a>
         </motion.button> 
     )
 }

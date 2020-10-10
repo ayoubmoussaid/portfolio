@@ -18,7 +18,7 @@ function About() {
     console.log('hi there')
     return (
         <InView as="div" threshold={0.5} onChange={(inView, entry) => doIt(inView, 0, elements, setElements)}>
-            <div id="about-sec" className="w-full h-full flex flex-col">
+            <motion.div initial={{x:-10}} animate={{x:0}} id="about-sec" className="w-full h-full flex flex-col">
                 <div className="py-8 sm:h-16 h-12 w-full "/>
                 <div className="sm:px-20 px-4 pt-24 h-full w-full bg-gray-100 text-gray-900 sm:rounded-tl-md flex flex-col">
                     <img src="/assets/profile.jpeg" className="w-32 h-32 rounded-full"/>
@@ -44,7 +44,7 @@ function About() {
                     ABOUT
                 </div>
                 <div className="sm:px-20 px-4 pt-10 bg-gray-100 text-gray-700">
-                    Currently software engineer student at Faculty of Science and Technologies-Settat, also studying at 1337 Coding School(42 Network). I am more passionate by mobile developement but I do Web and APIs as well.<br/>
+                    Currently software engineer student at Faculty of Science and Technologies-Settat, also studying at 1337 Coding School(42 Network). I am more passionate by mobile development, but I do Web and APIs as well.<br/>
                     I also love graphics Cards (I don't have any nonetheless).
                 </div>
                 <div className="sm:px-20 px-4 pt-5 bg-gray-100 w-full font-Dr-Sugiyama text-4xl text-gray-900">
@@ -54,7 +54,7 @@ function About() {
                 <div className="sm:px-20 px-4 pt-10 pb-20 bg-gray-100 text-gray-700">
                     Find me on <a className="hover:underline" href="https://www.linkedin.com/in/ayoub-moussaid/"><b>LinkedIn</b></a> & <a className="hover:underline" href="https://twitter.com/ayoubmoussaid6"><b>Twitter</b></a>.
                 </div>
-            </div>
+            </motion.div>
         </InView>
     )
 }
