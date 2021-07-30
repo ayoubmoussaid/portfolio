@@ -10,7 +10,7 @@ const education = [
         id: 2,
         location: 'Faculty of Science and Technologies - Settat',
         diploma: 'Software Engineer Diploma',
-        date: '2018-PRESENT'
+        date: '2018-2021'
     },
     {
         id: 3,
