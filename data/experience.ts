@@ -5,7 +5,7 @@ const experience = [
         company: 'Oracle Labs North Africa',
         description: 'Contribution to developement and benchmark of Oracle Property Graph technology (Java, PGQL, PGX)',
         task: 'Internship-Research Assistant',
-        date: 'February-August 2021'
+        date: 'FEBRUARY-AUGUST 2021'
     },
     {
         id: 2,
