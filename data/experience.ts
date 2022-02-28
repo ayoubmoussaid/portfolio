@@ -3,7 +3,7 @@ const experience = [
     {
         id: 1,
         company: 'Oracle',
-        description: '',
+        description: 'Software engineer, working on graph technologies (PGQL)',
         task: 'Member of Techinical Staff',
         date: 'OCTOBER 2022-PRESENT'
     },
